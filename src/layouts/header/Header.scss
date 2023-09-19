@@ -1,0 +1,62 @@
+@import '/src/variables.scss';
+
+.header {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.header .header-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .logo {
+  height: 70px;
+}
+
+.header .brandname {
+  color: $text-color;
+  @include h3;
+  width: 260px;
+}
+
+.header .navbar-nav {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+.header .link {
+  color: $second-text-color;
+  @include link;
+  text-align: center;
+}
+
+.header .btn-primary {
+  align-items: center;
+  background-color: $primary-color;
+  border-radius: 20px;
+  display: inline-flex;
+  gap: 15px;
+  overflow: hidden;
+  padding: 15px 25px;
+  position: relative;
+}
+
+.header .icn-arrow-right-icn {
+  height: 10px;
+  position: relative;
+  width: 12px;
+}
+
+.header .btn-text {
+  color: $light-text-color;
+  @include link;
+}

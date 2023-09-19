@@ -1,0 +1,39 @@
+@import '/src/variables.scss';
+
+.cta {
+    all: unset;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+}
+  
+.button-md-sec {
+    align-items: center;
+    background-color: $primary-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    padding: 15px 40px;
+    position: relative;
+    width: 413px;
+}
+  
+.btn-text {
+    color: $light-text-color;
+    font-family: $h3-font-family;
+    font-size: $h3-font-size;
+    font-style: $h3-font-style;
+    font-weight: $h3-font-weight;
+    letter-spacing: $h3-letter-spacing;
+    line-height: $h3-line-height;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}

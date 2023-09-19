@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+input {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+/* Стили полоски прокрутки */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Фоновый цвет полоски прокрутки */
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+/* Цвет самой полосы скролла */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(38,78 ,138 ,1);
+    border-radius: 4px;
+}

@@ -1,0 +1,110 @@
+@import '/src/variables.scss';
+
+.action-layout {
+  //background: linear-gradient(180deg, rgba(230, 230, 230, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: $light-background-color;
+  height: 594px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.action-layout .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  width: 1050px;
+}
+
+.action-layout .section-title {
+  color: transparent;
+  @include h1;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.action-layout .text-wrapper {
+  color: $text-color;
+}
+
+.action-layout .span {
+  color: $primary-color;
+}
+
+.action-layout .row-sec {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 688px;
+}
+
+.action-layout .col-md {
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: $light-drop-shadow;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.action-layout .input-group {
+  height: 60px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: $btn-color;
+  @include small;
+  width: 700px;
+  box-shadow: $light-drop-shadow;
+  padding-left: 20px;
+}
+
+.action-layout .input-group::placeholder {
+  color: $muted-color;
+  
+}
+
+.action-layout .text-wrapper-2 {
+  color: #252b42;
+}
+
+.action-layout .text-wrapper-3 {
+  color: $backgroung-color-blured;
+}
+
+.action-layout .text-wrapper-4 {
+  color: #bdbdbd;
+}
+
+.action-layout .your-email-wrapper {
+  background-color: $light-background-color;
+  border: 1px solid;
+  border-color: $primary-color;
+  border-radius: 20px;
+  height: 58px;
+  overflow: hidden;
+  position: relative;
+  width: 227px;
+}
+
+.action-layout .your-email-2 {
+  color: $text-color;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 52px;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  position: absolute;
+  top: 14px;
+  white-space: nowrap;
+}
+  

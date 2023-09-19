@@ -1,0 +1,33 @@
+@import '/src/variables.scss';
+
+.faq-element {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.faq-element .div-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq-element .image {
+    height: 30px;
+    position: relative;
+    width: 30px;
+}
+
+.faq-element .h-section-title {
+    color: $text-color;
+    @include h3;
+    position: relative;
+    width: fit-content;
+    //white-space: nowrap;
+}
+
+.faq-element .subtitle-section {
+    @include paragraph;
+    color: $second-text-color;
+}

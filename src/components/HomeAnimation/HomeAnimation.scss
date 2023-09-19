@@ -1,0 +1,26 @@
+@import '/src/variables.scss';
+
+.rotating-svg {
+    position: absolute;
+    z-index: 0;
+    top: 10%;
+    right: 5%;
+    width: 700px;
+    height: 700px;
+    filter: $background-blur;
+    animation: rotateX 60s linear infinite; /* Здесь 5s - продолжительность анимации */
+    transform-origin: center center; /* Устанавливаем точку вращения в центре */
+  }
+  
+  @keyframes rotateX {
+    0% {
+      transform: rotateZ(0deg) rotateX(0deg); /* Начальный угол - 0 градусов */
+    }
+    50% {
+        transform: rotateZ(180deg) rotateX(60deg);
+    }
+    100% {
+      transform: rotateZ(360deg) rotateX(0deg); /* Конечный угол - 360 градусов */
+    }
+  }
+  

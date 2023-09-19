@@ -1,0 +1,127 @@
+@import '/src/variables.scss';
+
+.HTLessons-layout {
+  background: linear-gradient(195deg, #EFEFEF 14.99%, rgba(255, 255, 255, 0.00), 20.64%);
+  background-color: $light-background-color;
+  height: 761px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.HTLessons-layout .overlap {
+  height: 771px;
+  position: relative;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HTLessons-layout .object {
+  height: 761px;
+  left: 537px;
+  position: absolute;
+  top: 0;
+  width: 708px;
+}
+
+.HTLessons-layout .col-md {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  position: relative;
+  width: 500px;
+}
+
+.HTLessons-layout .section-title {
+  color: $text-color;
+  @include h2;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.HTLessons-layout .text {
+  align-self: stretch;
+  color: $second-text-color;
+  @include paragraph;
+  position: relative;
+}
+
+.HTLessons-layout .overlap-group {
+  background-image: url(/assets/MacBook-Pro-16.png);
+  background-size: cover;
+  height: 458px;
+  width: 500px;
+  position: relative;
+}
+
+.HTLessons-layout .image {
+  height: 70px;
+  left: 364px;
+  position: absolute;
+  top: 270px;
+  width: 86px;
+}
+
+.HTLessons-layout .feature-title-sec {
+  color: $text-color;
+  @include h3;
+  white-space: nowrap;
+}
+
+.HTLessons-layout .div {
+  background-color: $dark-background-color;
+  height: 2px;
+  position: relative;
+  width: 50px;
+}
+
+.HTLessons-layout .card {
+  align-items: flex-start;
+  background-color: $light-background-color;
+  border-radius: 20px;
+  box-shadow: $accentued-drop-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  left: 135px;
+  overflow: hidden;
+  padding: 20px;
+  position: absolute;
+  
+}
+
+.HTLessons-layout .card-2 {
+  align-items: flex-start;
+  background-color: $light-background-color;
+  border-radius: 20px;
+  box-shadow: $accentued-drop-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  left: 239px;
+  overflow: hidden;
+  position: absolute;
+  top: 381px;
+  padding: 20px;
+}
+
+.HTLessons-layout .card-3 {
+  align-items: flex-start;
+  background-color: $light-background-color;
+  border-radius: 20px;
+  box-shadow: $accentued-drop-shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  left: 420px;
+  overflow: hidden;
+  position: absolute;
+  top: 50px;
+  padding: 20px;
+}

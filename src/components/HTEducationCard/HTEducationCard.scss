@@ -1,0 +1,45 @@
+@import '/src/variables.scss';
+
+.HTLesson-card .text {
+    color: $text-color;
+    @include paragraph;
+}
+
+.HTLesson-card .card-title {
+    color: $text-color;
+    @include h3;
+}
+
+.HTLesson-card .text-wrapper {
+    color: $light-text-color;
+    @include h5;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.HTLesson-card .div-wrapper {
+    align-items: center;
+    background-color: $dark-background-color;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+}
+
+.HTLesson-card {
+    align-items: flex-start;
+    background-color: $light-background-color;
+    border: 1px solid;
+    border-color: $stroke-gray;
+    border-radius: 20px;
+    box-shadow: $accentued-drop-shadow;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px;
+}

@@ -1,0 +1,96 @@
+@import '/src/variables.scss';
+
+.prices-layout {
+  background: radial-gradient(50% 50% at 50% 50%, rgb(232.69, 232.69, 232.69) 0%, rgba(255, 255, 255, 0) 100%);
+  height: 1037px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+  
+.prices-layout .overlap-group {
+  height: 1037px;
+  position: relative;
+  width: 1050px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+  
+.prices-layout .object {
+  height: 856px;
+  position: absolute;
+  top: 181px;
+  left: -5%;
+  width: 956px;
+  filter: $background-blur;
+}
+
+.prices-layout .head-content {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.prices-layout .row {
+  align-items: flex-end;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  width: 1050px;
+}
+  
+.prices-layout .price-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.prices-layout .section-title {
+  color: $text-color;
+  @include h2;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+  
+.prices-layout .section-subtitle {
+  align-self: stretch;
+  color: $second-text-color;
+  @include paragraph;
+  position: relative;
+}
+  
+.prices-layout .col-md {
+  align-items: center;
+  align-self: stretch;
+  border-radius: 10px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.prices-layout .title-sec-wrapper {
+  color: $light-text-gray-1;
+  @include h5;  
+  background-color: $secondary-color-1;
+  border-radius: 10px 10px 0px 0px;
+  gap: 10px;
+  padding: 5px 15px;
+}
+
+.prices-layout .green-wrapper {
+  background-color: $primary-color; 
+}
+
+.prices-layout .blue-wrapper {
+  background-color: $dark-background-color;
+}

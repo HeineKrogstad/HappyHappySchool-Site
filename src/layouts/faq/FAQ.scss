@@ -1,0 +1,60 @@
+@import '/src/variables.scss';
+
+.FAQ-layout {
+  //background: linear-gradient(180deg, rgba(230, 230, 230, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: $light-background-color;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.FAQ-layout  .full-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.FAQ-layout .content {
+  width: 1050px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.FAQ-layout .head-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.FAQ-layout .main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 1000px;
+}
+
+.FAQ-layout .section-title {
+  color: $text-color;
+  @include h2;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.FAQ-layout .vector {
+  height: 39px;
+  width: 127px;
+}
+
+.FAQ-layout .vectors-frame {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+  

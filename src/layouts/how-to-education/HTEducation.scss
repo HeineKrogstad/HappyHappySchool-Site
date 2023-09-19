@@ -1,0 +1,59 @@
+@import '/src/variables.scss';
+
+.HT-Education-frame {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.HT-Education-frame .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    overflow: hidden;
+    position: relative;
+    width: 1050px;
+}
+  
+.HT-Education-frame .row {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+  
+.HT-Education-frame .section-title {
+    color: $text-color;
+    @include h2;
+  }
+  
+.HT-Education-frame .cards {
+    align-items: center;
+    
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: $dark-background-color;
+    border-radius: 70px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+    position: relative;
+    width: 100%;
+  }
+  
+.HT-Education-frame .col-md {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 30px;
+    justify-content: center;
+    position: relative;
+    padding: 0px 100px;
+}
+  

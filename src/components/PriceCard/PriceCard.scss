@@ -1,0 +1,53 @@
+@import '/src/variables.scss';
+
+.price-card {
+    align-items: flex-start;
+    background-color: $light-background-color;
+    border: 1px solid;
+    border-color: $stroke-gray;
+    border-radius: 10px;
+    box-shadow: $accentued-drop-shadow;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    padding: 35px 20px;
+    position: relative;
+}
+
+.price-card .fixed-width-fixed-2 {
+    background-color: $dark-background-color;
+    height: 2px;
+    position: relative;
+    width: 50px;
+}
+
+.price-card .h-title {
+    color: $text-color;
+    @include h3;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.price-card .text {
+    color: $second-text-color;
+    @include paragraph;
+    width: 250px;
+}
+
+.price-card .p {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.price-card .text-wrapper-2 {
+    color: #bdbdbd;
+    @include h5;
+}
+
+.price-card .span {
+    color: $primary-color;
+    @include h3;
+}

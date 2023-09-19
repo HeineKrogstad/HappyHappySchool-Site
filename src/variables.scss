@@ -1,0 +1,165 @@
+/*fonts*/
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(./fonts/Montserrat-Bold.ttf);
+}
+
+$light-background-color: rgba(255, 255, 255, 1);
+$light-text-color: rgba(255, 255, 255, 1);
+$dark-background-color: rgba(38, 78, 138, 1);
+$second-text-color: rgba(115, 115, 115, 1);
+$backgroung-color-blured: rgba(115, 115, 115, 0.8);
+$text-color: rgba(37, 43, 66, 1);
+$accentued-drop-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+$light-drop-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+$primary-color: #96BB7C;
+$stroke-gray: rgba(233, 233, 233, 1);
+$secondary-color-1: #FFAB71;
+$muted-color: #BDBDBD;
+$light-text-gray-1: rgba(250, 250, 250, 1);
+$background-blur: blur(4px);
+$btn-color: #F9F9F9;
+
+/* paragraph */
+@mixin paragraph {
+    font-family: $paragraph-font-family;
+    font-size: $paragraph-font-size;
+    font-style: $paragraph-font-style; 
+    font-weight: $paragraph-font-weight;
+    line-height: $paragraph-line-height; 
+    letter-spacing: $paragraph-letter-spacing;
+}
+
+$paragraph-font-family: "Montserrat-Regular";
+$paragraph-font-size: 18px;
+$paragraph-font-style: normal;
+$paragraph-font-weight: 400;
+$paragraph-line-height: 20px; /* 111.111% */
+$paragraph-letter-spacing: 0.2px;
+
+/* h1 */
+@mixin h1 {
+    font-family: $h1-font-family;
+    font-size: $h1-font-size;
+    font-style: $h1-font-style; 
+    font-weight: $h1-font-weight;
+    line-height: $h1-line-height; 
+    letter-spacing: $h1-letter-spacing;
+}
+
+$h1-font-family: "Montserrat-Bold";
+$h1-font-size: 58px;
+$h1-font-style: normal;
+$h1-font-weight: 700;
+$h1-line-height: 80px; /* 137.931% */
+$h1-letter-spacing: 0.2px;
+
+/* h2 */
+@mixin h2 {
+    font-family: $h2-font-family;
+    font-size: $h2-font-size;
+    font-style: $h2-font-style; 
+    font-weight: $h2-font-weight;
+    line-height: $h2-line-height; 
+    letter-spacing: $h2-letter-spacing;
+}
+$h2-font-family: "Montserrat-Bold";
+$h2-font-size: 40px;
+$h2-font-style: normal;
+$h2-font-weight: 700;
+$h2-line-height: 50px; /* 125% */
+$h2-letter-spacing: 0.2px;
+
+/* h3 */
+@mixin h3 {
+    font-family: $h3-font-family;
+    font-size: $h3-font-size;
+    font-style: $h3-font-style;
+    font-weight: $h3-font-weight;
+    letter-spacing: $h3-letter-spacing;
+    line-height: $h3-line-height;
+}
+$h3-font-family: "Montserrat-Bold";
+$h3-font-size: 24px;
+$h3-font-style: normal;
+$h3-font-weight: 700;
+$h3-line-height: 32px; /* 133.333% */
+$h3-letter-spacing: 0.1px;
+
+/* h5 */
+@mixin h5 {
+    font-family: $h5-font-family;
+    font-size: $h5-font-size;
+    font-style: $h5-font-style; 
+    font-weight: $h5-font-weight;
+    line-height: $h5-line-height; 
+    letter-spacing: $h5-letter-spacing;
+}
+$h5-font-family: "Montserrat-Bold";
+$h5-font-size: 16px;
+$h5-font-style: normal;
+$h5-font-weight: 700;
+$h5-line-height: 24px; /* 150% */
+$h5-letter-spacing: 0.1px;
+
+/* h6 */
+$h6-font-family: "Montserrat-Bold";
+$h6-font-size: 14px;
+$h6-font-style: normal;
+$h6-font-weight: 700;
+$h6-line-height: 24px; /* 171.429% */
+$h6-letter-spacing: 0.2px;
+
+/* small */
+@mixin small {
+    font-family: $small-font-family;
+    font-size: $small-font-size;
+    font-style: $small-font-style;
+    font-weight: $small-font-weight;
+    letter-spacing: $small-letter-spacing;
+    line-height: $small-line-height;
+}
+$small-font-family: "Montserrat-Regular";
+$small-font-size: 12px;
+$small-font-style: normal;
+$small-font-weight: 400;
+$small-line-height: 16px; /* 133.333% */
+$small-letter-spacing: 0.2px;
+
+/* link */
+@mixin link {
+    font-family: $link-font-family;
+    font-size: $link-font-size;
+    font-style: $link-font-style;
+    font-weight: $link-font-weight;
+    letter-spacing: $link-letter-spacing;
+    line-height: $link-line-height;
+}
+$link-font-family: "Montserrat-Bold";
+$link-font-size: 14px;
+$link-font-style: normal;
+$link-font-weight: 700;
+$link-line-height: 24px; /* 171.429% */
+$link-letter-spacing: 0.2px;
+
+/* btn-text */
+@mixin btn {
+    font-family: $btn-font-family;
+    font-size: $btn-font-size;
+    font-style: $btn-font-style;
+    font-weight: $btn-font-weight;
+    letter-spacing: $btn-letter-spacing;
+    line-height: $btn-line-height;
+}
+$btn-font-family: "Montserrat-Bold";
+$btn-font-size: 14px;
+$btn-font-style: normal;
+$btn-font-weight: 700;
+$btn-line-height: 22px; /* 157.143% */
+$btn-letter-spacing: 0.2px;
+

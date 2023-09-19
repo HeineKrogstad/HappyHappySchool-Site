@@ -1,0 +1,66 @@
+@import '/src/variables.scss';
+
+.info-card {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: $light-background-color;
+  border-radius: 20px;
+  box-shadow: $accentued-drop-shadow;
+  gap: 20px;
+  height: 320px;
+  padding: 30px 40px;
+  width:250px;
+}
+
+.info-card .circle-sec {
+  background-color: $dark-background-color;
+  border-radius: 200px;
+  height: 72px;
+  overflow: hidden;
+  position: relative;
+  width: 72px;
+}
+
+.info-card .icon-cool-icon {
+  height: 32px;
+  left: 19px;
+  position: absolute;
+  top: 22px;
+  width: 32px;
+}
+
+.info-card .feature-title-sec {
+  color: $text-color;
+  @include h3;
+  position: relative;
+  width: fit-content;
+}
+
+.info-card .fixed-width-fixed {
+  background-color: $dark-background-color;
+  height: 2px;
+  position: relative;
+  width: 50px;
+}
+
+.info-card .flexcontainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3px;
+}
+
+.info-card .text-wrapper {
+  color: $second-text-color;
+  @include paragraph;
+}
+
+.info-card .span {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+

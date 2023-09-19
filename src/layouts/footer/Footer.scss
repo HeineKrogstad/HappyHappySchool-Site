@@ -1,0 +1,76 @@
+@import '/src/variables.scss';
+
+.footer {
+  //background: linear-gradient(180deg, rgb(232.69, 232.69, 232.69) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: $light-background-color;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer .container {
+  padding: 50px 0px;
+  width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  height: inherit;
+}
+
+.footer .logo-happy-happy {
+  height: 80px;
+}
+
+.footer .col-md {
+  align-items: flex-start;
+  align-self: stretch;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer .h {
+  color: $text-color;
+  @include h5;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.footer .div-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  
+}
+  
+.footer .text-wrapper {
+  color: $second-text-color;
+  @include h5;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.footer .social-media {
+  width: 40px;
+  height: 40px;
+}
+  
+.footer .social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+  
+.footer .link {
+  color: $second-text-color;
+  @include link;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+  
