@@ -2,14 +2,26 @@ import React from "react";
 import "./HTEducation.scss";
 import { BlueLine } from "../../components/BlueLine/BlueLine";
 import { HTEducationCard } from "../../components/HTEducationCard/HTEducationCard";
+import { useRef } from "react";
+import { motion, useInView} from "framer-motion"
+import { globalVariants } from "../../motionVariants";
 
 export const HTEducation = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+  
   return (
     <div className="HT-Education-frame">
       <div className="content">
         <div className="row">
           <BlueLine />
-          <div className="section-title">Как строится обучение</div>
+          <motion.div className="section-title"
+            ref={ref}
+            variants={globalVariants}
+            initial={'hiddenText' }
+            animate={isInView ? 'visibleText' : 'hiddenText' }
+            transition={{ duration: 1 }}
+          >Как строится обучение</motion.div>
         </div>
         <div className="cards">
           <div className="col-md">

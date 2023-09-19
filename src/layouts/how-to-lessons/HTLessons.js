@@ -3,22 +3,41 @@ import "./HTLessons.scss";
 import BGVector from '../../assets/bg-figure-1.svg';
 import Teacher from '../../assets/teacher.png'
 import { BlueLine } from "../../components/BlueLine/BlueLine";
+import { motion, useInView} from "framer-motion"
+import { useRef } from "react";
+import { globalVariants } from "../../motionVariants";
 
 export const HTLessons = () => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
   return (
     <div className="HTLessons-layout">
       <img className="object" alt="Object" src= {BGVector} />
       <div className="overlap">
         <div className="col-md">
           <BlueLine />
-          <div className="section-title">Как проходят уроки</div>
-          <p className="text">
+          <motion.div 
+            className="section-title"
+            ref={ref}
+            variants={globalVariants}
+            initial={'hiddenText' }
+            animate={isInView ? 'visibleText' : 'hiddenText' }
+            transition={{ duration: 1 }}
+          >Как проходят уроки</motion.div>
+          <motion.p className="text"
+            ref={ref}
+            variants={globalVariants}
+            initial={'hiddenText' }
+            animate={isInView ? 'visibleText' : 'hiddenText' }
+            transition={{ duration: 1 }}
+          >
             Уроки в нашей школе проходят в онлайн формате
             используя онлайн доски, видеочат с педагогом.
             Помимо этого педагог ведет базу материалов,
             чтобы ученик мог в любой момент получить
             доступ к материалам уроков и конспектам
-          </p>
+          </motion.p>
         </div>
         <div className="overlap-group">
           <img className="image" alt="Teacher" src={Teacher} />
@@ -41,3 +60,4 @@ export const HTLessons = () => {
     </div>
   );
 };
+
