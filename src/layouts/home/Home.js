@@ -19,6 +19,7 @@ export const Home = () => {
     { titleText: 'Идивидуальный подход', text1: 'Наши преподаватели найдут общий язык с Вашим ребенком и создадут персональный план обучения', icon: iconIndividual },
     { titleText: 'Качественные материалы', text1: 'Обучающие материалы сотавлены опытными методистами и содержат всё нужное для обчения', icon: iconBook }
   ];
+  
   return (
     <div className="home">
       <div className="home-content">

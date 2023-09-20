@@ -18,23 +18,30 @@ export const HTEducation = () => {
           <motion.div className="section-title"
             ref={ref}
             variants={globalVariants}
-            initial={'hiddenText' }
+            initial={ 'hiddenText' }
             animate={isInView ? 'visibleText' : 'hiddenText' }
             transition={{ duration: 1 }}
           >Как строится обучение</motion.div>
         </div>
-        <div className="cards">
-          <div className="col-md">
+        <motion.div className="cards"
+          variants={globalVariants}
+          ref={ref}
+          initial={'hiddenBlock'}
+          animate={isInView ? 'visibleBlock' : 'hiddenBlock'}
+          >
+          <motion.div className="col-md"
+            custom={1}
+            variants={globalVariants}
+          >
             <HTEducationCard number="1" title="Вводный урок" subtitle="На вводном уроке мы оценим уровень знаний, определим цель занятий и составим расписание"/>
             <HTEducationCard number="2" title="Занятия с репетитором" subtitle="Ученик занимается согласно расписанию, выполняет задания, закрепляет теорию на практике"/>
-          </div>
-          <div className="col-md">
+          </motion.div>
+          <motion.div className="col-md" custom={2} variants={globalVariants}>
             <HTEducationCard number="3" title="Домашние задания" subtitle="Преподаватель дает ученику домашние задания согласно программе и проверяет их"/>
             <HTEducationCard number="4" title="Обратная связь" subtitle="Раз в 4 занятия преподаватель дает обратную связь об успехах ученика"/>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );
 };
-
