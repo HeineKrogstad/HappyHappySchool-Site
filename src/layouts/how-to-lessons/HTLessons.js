@@ -15,8 +15,8 @@ export const HTLessons = () => {
     <div className="HTLessons-layout">
       <motion.img 
         initial={{scale: 1, x:0, y:0}}
-        animate={{scale: [1, 1.01, 1], x: [0, -3, 0, 3, 0], y: [0, 3, 0 -3, 0]}}
-        transition={{duration: 5, repeat: Infinity}}
+        animate={{scale: [1, 1.01, 1], y: [0, 3, 0 ]}}
+        transition={{duration: 5, repeat: Infinity, type:'linear'}}
         className="object" alt="Object" src= {BGVector} />
       <div className="overlap">
         <div className="col-md">

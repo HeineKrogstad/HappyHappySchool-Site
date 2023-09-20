@@ -12,8 +12,8 @@ export const Prices = () => {
     <div className="prices-layout">
       <motion.img 
         initial={{scale: 1, x:0, y:0}}
-        animate={{ x: [0, -2, 0, 2, 0], y: [0, 2, 0 -2, 0]}}
-        transition={{duration: 5, repeat: Infinity}}
+        animate={{ y: [0, 5, 0]}}
+        transition={{duration: 5, repeat: Infinity, type:"linear"}}
         className="object" alt="Object" src= {bgTriagle} />
       <div className="overlap-group">
         <div className="head-content">
