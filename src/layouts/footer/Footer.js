@@ -11,7 +11,7 @@ import VK from "../../assets/vk-logo.svg";
 
 export const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="contacts">
         <div className="container">
             <img className="logo-happy-happy" alt="Logo happy happy" src= {Logo} />
             <div className="col-md">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Reviews.scss";
-
+import VideoComponent from "../../components/VideoComponent/VideoComponent";
 
 
 export const Reviews = () => {
@@ -25,6 +25,7 @@ export const Reviews = () => {
                 </p>
               </div>
             </div>
+            <VideoComponent/>
           </div>
           <div className="testimonials-card-wrapper">
             <div className="testimonials-card-2">

@@ -16,7 +16,7 @@ export const Action = () => {
   };
 
   return (
-    <div className="action-layout">
+    <div className="action-layout" id='action'>
       <div className="container">
         <p className="section-title">
           <span className="text-wrapper">Попробуйте </span>

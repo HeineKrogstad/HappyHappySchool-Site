@@ -9,7 +9,7 @@ import { globalVariants } from "../../motionVariants";
 
 export const Prices = () => {
   return (
-    <div className="prices-layout">
+    <div className="prices-layout" id="prices">
       <motion.img 
         initial={{scale: 1, x:0, y:0}}
         animate={{ y: [0, 5, 0]}}

@@ -1,10 +1,15 @@
 import React from "react";
 import "./TeacherCard.scss";
 import vk from '../../assets/vk-logo.svg';
+import { motion } from 'framer-motion';
 
 export const TeacherCard = ({profilePic, name, job, link}) => {
   return (
-    <div className="teacher-card">
+    <motion.div 
+      className="teacher-card"
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 0.5 }}
+    >
         <div className="user-card">
           <div className="fixed-height-sec">
             <img className="img" alt="Teacher" src= { profilePic } />
@@ -17,6 +22,6 @@ export const TeacherCard = ({profilePic, name, job, link}) => {
               </a>
           </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
