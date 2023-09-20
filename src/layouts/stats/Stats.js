@@ -26,28 +26,28 @@ export const Stats = () => {
           transition={{ duration: 1.5 }}
         />
       </svg>
-        <motion.div className="row"
-          ref={ref}
+      <motion.div className="row"
+        ref={ref}
+        variants={globalVariants}
+        initial={'hiddenBlock' }
+        animate={isInView ? 'visibleBlock' : 'hiddenBlock' }
+        transition={{ duration: 1 }}>
+  
+        <StatsComponent title = '250+' subTitle = 'Довольных учеников'/>
+        <StatsComponent title = '23' subTitle = 'Преподавателя'/>
+        <StatsComponent title = '15' subTitle = 'Предметов'/>
+        <StatsComponent title = '5000+' subTitle = 'Часов проведенных занятий'/>
+      </motion.div>
+      <svg width="128" height="40" viewBox="0 0 128 40" fill="none" className="vector-last" ref={ref}>
+        <motion.path
+          stroke="#264E8A"
+          d="M1,39l113.5,0c0,0,12.5-1.3,12.5-15.6c0-14.3,0-11.9,0-22.4"
           variants={globalVariants}
-          initial={'hiddenBlock' }
-          animate={isInView ? 'visibleBlock' : 'hiddenBlock' }
-          transition={{ duration: 1 }}>
-    
-          <StatsComponent title = '250+' subTitle = 'Довольных учеников'/>
-          <StatsComponent title = '23' subTitle = 'Преподавателя'/>
-          <StatsComponent title = '15' subTitle = 'Предметов'/>
-          <StatsComponent title = '5000+' subTitle = 'Часов проведенных занятий'/>
-        </motion.div>
-        <svg width="128" height="40" viewBox="0 0 128 40" fill="none" className="vector-last" ref={ref}>
-          <motion.path
-            stroke="#264E8A"
-            d="M1,39l113.5,0c0,0,12.5-1.3,12.5-15.6c0-14.3,0-11.9,0-22.4"
-            variants={globalVariants}
-            initial={'hiddenVector' }
-            animate={isInView ? 'visibleVector' : 'hiddenVector' }
-            transition={{ duration: 1.5 }}
-          />
-        </svg>
+          initial={'hiddenVector' }
+          animate={isInView ? 'visibleVector' : 'hiddenVector' }
+          transition={{ duration: 1.5 }}
+        />
+      </svg>
       </div>
     </div>
   );
