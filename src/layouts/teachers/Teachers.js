@@ -11,10 +11,6 @@ import { globalVariants } from "../../motionVariants";
 
 
 export const Teachers = () => {
-  
-  
-
-  
   return (
     <div className="teachers-layout">
       <motion.img 

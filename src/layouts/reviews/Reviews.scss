@@ -1,265 +1,66 @@
 @import '/src/variables.scss';
 
-.element-layout5 {
+.reviews-layout {
   background-color: $light-background-color;
   height: 855px;
-  position: relative;
-  width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.element-layout5 .container {
+.reviews-layout .container {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 80px;
-  left: 195px;
-  padding: 80px 0px;
   position: relative;
   width: 1050px;
 }
 
-.element-layout5 .row {
+.reviews-layout .main-content {
   align-items: flex-start;
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  position: relative;
-  width: 1044px;
-}
-
-.element-layout5 .main-content {
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
   gap: 10px;
-  position: relative;
-  width: 691px;
+  width: 100%;
 }
 
-.element-layout5 .fixed-width-fixed {
-  background-color: $dark-background-color;
-  height: 7px;
-  position: relative;
-  width: 94px;
-}
-
-.element-layout5 .section-title {
+.reviews-layout .section-title {
   color: $text-color;
-  font-family: $h2-font-family;
-  font-size: $h2-font-size;
-  font-style: $h2-font-style;
-  font-weight: $h2-font-weight;
-  letter-spacing: $h2-letter-spacing;
-  line-height: $h2-line-height;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
+  @include h2;
 }
 
-.element-layout5 .div {
+.reviews-layout .reviews-content {
   align-items: center;
-  align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
-  gap: 30px;
+  gap: 40px;
   position: relative;
   width: 100%;
 }
 
-.element-layout5 .col-md {
+.reviews-layout .col-md {
   align-items: center;
   display: inline-flex;
-  flex: 0 0 auto;
   position: relative;
+  gap: 20px;
 }
 
-.element-layout5 .testimonials-card {
-  align-items: center;
-  background-color: $light-background-color;
-  display: inline-flex;
-  flex: 0 0 auto;
-  padding: 25px 0px;
-  position: relative;
-}
-
-.element-layout5 .card-content {
+.reviews-layout .card-content {
   align-items: center;
   display: inline-flex;
-  flex: 0 0 auto;
   flex-direction: column;
   gap: 15px;
   padding: 30px 0px;
   position: relative;
 }
 
-.element-layout5 .paragraph {
+.reviews-layout .paragraph {
   color: $text-color;
-  font-family: $h3-font-family;
-  font-size: $h3-font-size;
-  font-style: $h3-font-style;
-  font-weight: $h3-font-weight;
-  letter-spacing: $h3-letter-spacing;
-  line-height: $h3-line-height;
-  margin-top: -1px;
-  position: relative;
-  text-align: center;
-  width: 272px;
+  @include h3;
 }
 
-.element-layout5 .text-wrapper {
+.reviews-layout .text-wrapper {
   color: $text-color;
-  font-family: $paragraph-font-family;
-  font-size: $paragraph-font-size;
-  font-style: $paragraph-font-style;
-  font-weight: $paragraph-font-weight;
-  letter-spacing: $paragraph-letter-spacing;
-  line-height: $paragraph-line-height;
-  position: relative;
+  @include paragraph;
   text-align: center;
-  width: 251px;
 }
-
-.element-layout5 .group {
-  
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 472.5px;
-  position: relative;
-  width: 234.25px;
-}
-
-.element-layout5 .overlap-group {
-
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 458px;
-  left: 4px;
-  position: relative;
-  top: 1px;
-  width: 226px;
-}
-
-.element-layout5 .iphone-pro-mockup {
-  height: 438px;
-  left: 10px;
-  object-fit: cover;
-  position: absolute;
-  top: 9px;
-  width: 204px;
-}
-
-.element-layout5 .image {
-  height: 72px;
-  left: 77px;
-  object-fit: cover;
-  position: absolute;
-  top: 192px;
-  width: 74px;
-}
-
-.element-layout5 .testimonials-card-wrapper {
-  align-items: center;
-  display: flex;
-  position: relative;
-  width: 447px;
-}
-
-.element-layout5 .testimonials-card-2 {
-  align-items: center;
-  background-color: $light-background-color;
-  display: flex;
-  margin-right: -247px;
-  padding: 25px 0px 25px 10px;
-  position: relative;
-  width: 694px;
-}
-
-.element-layout5 .card-content-2 {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  overflow: hidden;
-  padding: 30px 10px;
-  position: relative;
-  width: 261px;
-}
-
-.element-layout5 .paragraph2 {
-  color: $text-color;
-  font-family: $h3-font-family;
-  font-size: $h3-font-size;
-  font-style: $h3-font-style;
-  font-weight: $h3-font-weight;
-  letter-spacing: $h3-letter-spacing;
-  line-height: $h3-line-height;
-  margin-left: -15.5px;
-  margin-right: -15.5px;
-  margin-top: -1px;
-  position: relative;
-  text-align: center;
-  width: 272px;
-}
-
-.element-layout5 .p {
-  color: $text-color;
-  font-family: $paragraph-font-family;
-  font-size: $paragraph-font-size;
-  font-style: $paragraph-font-style;
-  font-weight: $paragraph-font-weight;
-  letter-spacing: $paragraph-letter-spacing;
-  line-height: $paragraph-line-height;
-  position: relative;
-  text-align: center;
-  width: 224px;
-}
-
-.element-layout5 .overlap-group-wrapper {
-  height: 459px;
-  position: relative;
-  width: 226.75px;
-}
-
-.element-layout5 .overlap-group-2 {
-  height: 459px;
-  position: relative;
-  width: 227px;
-}
-
-.element-layout5 .shadow {
-  height: 459px;
-  left: 2px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 225px;
-}
-
-.element-layout5 .main {
-  height: 458px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 1px;
-  width: 224px;
-}
-
-.element-layout5 .iphone-mockup {
-  height: 438px;
-  left: 9px;
-  object-fit: cover;
-  position: absolute;
-  top: 11px;
-  width: 203px;
-}
-
-.element-layout5 .img {
-  height: 72px;
-  left: 74px;
-  object-fit: cover;
-  position: absolute;
-  top: 193px;
-  width: 74px;
-}
-  

@@ -1,2 +1,33 @@
 @import '/src/variables.scss';
 
+.video-wrapper {
+    background-image: url('../../assets/apple.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+.video-wrapper iframe{
+    border-radius: 30px; 
+    box-shadow: $accentued-drop-shadow;   
+}
+
+.home-indicator {
+    position: absolute;
+    bottom: 17px;
+    right: 70px;
+    width: 80px;
+    height: 2px;
+}
+
+.camera {
+    position: absolute;
+    width: 60px;
+    height: 20px;
+    top: 10px;
+    right: 80px;
+}
