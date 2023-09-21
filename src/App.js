@@ -13,6 +13,7 @@ import { Action } from './layouts/action/Action';
 import { FAQ } from './layouts/faq/FAQ';
 import { Footer } from './layouts/footer/Footer';
 import { Header } from './layouts/header/Header';
+import { Courses } from './layouts/Courses/Courses';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Home />
       <Stats />
       <HTLessons />
+      <Courses />
       <HTEducation />
       <Prices />
       <Reviews />

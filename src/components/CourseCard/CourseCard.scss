@@ -1,0 +1,40 @@
+@import '/src/variables.scss';
+
+.course-card {
+    align-items: flex-start;
+    background-color: $light-background-color;
+    border-radius: 20px;
+    box-shadow: $accentued-drop-shadow;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 330px;
+    border: 0.5px solid;
+    border-color: $stroke-gray;
+    align-items: center;
+}
+  
+.course-card .course-cover {
+    border-radius: 20px 20px 0px 0px;
+    height: 150px;
+    position: relative;
+    max-width: 330px;
+}
+  
+.course-card .frame {
+    align-items: center;
+    background-color: $dark-background-color;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: inherit;
+}
+  
+.course-card .course-title {
+    color: $light-text-gray-1;
+    @include h5;
+}
+  

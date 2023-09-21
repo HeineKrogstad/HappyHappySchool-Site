@@ -54,6 +54,7 @@ export const Home = () => {
                 initial={'hiddenVerticalBlock'}
                 animate={isInView ? 'visibleVerticalBlock' : 'hiddenVerticalBlock'}
                 transition={{ duration: 1, delay: index * 0.5 }}
+                
               >
                 <InfoCard
                   titleText={card.titleText}

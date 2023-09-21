@@ -1,0 +1,72 @@
+@import '/src/variables.scss';
+
+.courses-layout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.courses-layout .content {
+    width: 1050px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.courses-layout .section-title {
+    @include h2;
+    color: $text-color;
+}
+
+.courses-layout .text {
+    @include paragraph;
+    color: $second-text-color;
+    width: 1000px;
+}
+
+.courses-layout .head-content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.courses-layout .cards-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+}
+
+.courses-layout .cards-column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.courses-layout .other-courses {
+    @include h5;
+    color: $light-text-gray-1;
+    background-color: $dark-background-color;
+    border-radius: 0px 0px 20px 20px;
+    width: fit-content;
+    padding: 10px 25px;
+    white-space: nowrap;
+}
+
+.courses-layout .switch-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.courses-layout .button {
+    background-color: $dark-background-color;
+    color: $light-text-gray-1;
+    @include h5;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 25px;
+}
