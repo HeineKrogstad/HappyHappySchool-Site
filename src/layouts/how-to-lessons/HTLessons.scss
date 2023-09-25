@@ -3,16 +3,18 @@
 .HTLessons-layout {
   background: linear-gradient(195deg, #EFEFEF 14.99%, rgba(255, 255, 255, 0.00), 20.64%);
   background-color: $light-background-color;
-  height: 761px;
+  //height: 761px;
   overflow: hidden;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .HTLessons-layout .overlap {
-  height: 771px;
+  //height: 771px;
   position: relative;
   width: 1050px;
   display: flex;
@@ -21,11 +23,11 @@
 }
 
 .HTLessons-layout .object {
-  height: 761px;
-  left: 770px;
+  height: 650px;
+  left: 800px;
   position: absolute;
-  top: 0;
   width: 708px;
+  top: 30px;
 }
 
 .HTLessons-layout .col-md {

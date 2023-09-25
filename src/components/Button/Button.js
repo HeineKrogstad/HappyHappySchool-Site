@@ -6,8 +6,12 @@ export const Button = () => {
     const scrollToSection = (event, sectionId) => {
         event.preventDefault();
         const section = document.getElementById(sectionId);
-        section.scrollIntoView({ behavior: 'smooth' });
-      };
+        const headerHeight = 100;
+        window.scroll({
+          top: section.offsetTop - headerHeight,
+          behavior: 'smooth',
+        });
+    };
     
     return (
     <motion.button 

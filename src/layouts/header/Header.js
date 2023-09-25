@@ -13,7 +13,11 @@ export const Header = () => {
   const scrollToSection = (event, sectionId) => {
     event.preventDefault();
     const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: 'smooth' });
+    const headerHeight = 100;
+    window.scroll({
+      top: section.offsetTop - headerHeight,
+      behavior: 'smooth',
+    });
   };
   
   return (
@@ -22,7 +26,7 @@ export const Header = () => {
           <img className="logo" alt="logo" src={Logo} />
           <div className="brandname">HappyHappy School</div>
           <div className="navbar-nav">
-            <a href="#classes" className="link" onClick={(e) => scrollToSection(e, 'classes')}>Направления</a>
+            <a href="#classes" className="link" onClick={(e) => scrollToSection(e, 'courses')}>Направления</a>
             <a href="#prices" className="link" onClick={(e) => scrollToSection(e, 'prices')}>Цены</a>
             <a href="#contacts" className="link" onClick={(e) => scrollToSection(e, 'contacts')}>Контакты</a>
           </div>

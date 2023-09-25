@@ -1,16 +1,17 @@
 @import '/src/variables.scss';
 
 .prices-layout {
-  background: radial-gradient(50% 50% at 50% 50%, rgb(232.69, 232.69, 232.69) 0%, rgba(255, 255, 255, 0) 100%);
-  height: 1037px;
+  //background: radial-gradient(50% 50% at 50% 50%, rgb(232.69, 232.69, 232.69) 0%, rgba(255, 255, 255, 0) 100%);
+  //height: 1037px;
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 100px;
 }
   
 .prices-layout .overlap-group {
-  height: 1037px;
+  //height: 1037px;
   position: relative;
   width: 1050px;
   align-items: center;

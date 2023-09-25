@@ -1,11 +1,12 @@
 @import '/src/variables.scss';
 
 .HT-Education-frame {
-    height: 1000px;
+    //height: 1000px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
   
 .HT-Education-frame .content {

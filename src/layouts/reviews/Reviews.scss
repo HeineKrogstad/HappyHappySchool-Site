@@ -1,11 +1,12 @@
 @import '/src/variables.scss';
 
 .reviews-layout {
-  background-color: $light-background-color;
-  height: 855px;
+  //background-color: $light-background-color;
+  //height: 855px;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 150px;
 }
 
 .reviews-layout .container {

@@ -79,8 +79,8 @@ export const Prices = () => {
             variants={globalVariants}
             initial={'hiddenBlock'}
             whileInView={'visibleBlock'}
-            transition={{ duration: 1 }}
-            viewport={{ amount: 0.2, once: true }}
+            
+            viewport={{ once: true }}
           >
             <motion.div 
               className="col-md"

@@ -41,7 +41,7 @@ export const Courses = () => {
   };
 
   return (
-    <div className="courses-layout">
+    <div className="courses-layout" id="courses">
       <div className="content">
         <div className="head-content">
           <BlueLine />
@@ -100,9 +100,10 @@ export const Courses = () => {
                 whileInView={ 'visibleBlock' }
                 custom={index}
                 viewport={{ amount: 0.2, once: true }}
+                whileHover={{ scale: 1.01 }}
+                transition={{ duration: 0.5 }}
                 >
                     <CourseCard
-                    key={index}
                     titleText={card.titleText}
                     img={card.img}
                     />
@@ -119,9 +120,10 @@ export const Courses = () => {
                 whileInView={ 'visibleBlock' }
                 custom={index}
                 viewport={{ amount: 0.2, once: true }} 
+                whileHover={{ scale: 1.01 }}
+                transition={{ duration: 0.5 }}
                 >
                     <CourseCard
-                    key={index}
                     titleText={card.titleText}
                     img={card.img}
                     />
@@ -136,12 +138,13 @@ export const Courses = () => {
                 initial={'hiddenBlock'}
                 whileInView={ 'visibleBlock' }
                 exit={'hiddenText'}
-                
+                key={index}
                 custom={index}
                 viewport={{ amount: 0.2, once: true }} 
+                whileHover={{ scale: 1.01 }}
+                transition={{ duration: 0.5 }}
                 >
                     <CourseCard
-                    key={index}
                     titleText={card.titleText}
                     img={card.img}
                     />

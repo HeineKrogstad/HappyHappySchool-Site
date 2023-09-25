@@ -28,7 +28,7 @@ export const Reviews = () => {
               variants={globalVariants}
               initial={'hiddenText'}
               whileInView={'visibleText'}
-              transition={{ duration: 1.5 }}
+              transition={{ duration: 1 }}
               viewport={{ amount: 0.5, once: true }}
               className="card-content"
             >
@@ -48,7 +48,7 @@ export const Reviews = () => {
                 initial={'hiddenText'}
                 whileInView={'visibleText'}
                 transition={{ duration: 1 }}
-                viewport={{ amount: 0.2, once: true }}
+                viewport={{ amount: 0.5, once: true }}
               >
                 <div className="paragraph">Анастасия</div>
                 <p className="text-wrapper">

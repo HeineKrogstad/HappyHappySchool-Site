@@ -2,12 +2,13 @@
 
 .action-layout {
   //background: linear-gradient(180deg, rgba(230, 230, 230, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
-  background-color: $light-background-color;
-  height: 594px;
+  //background-color: $light-background-color;
+  //height: 594px;
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .action-layout .container {
@@ -26,6 +27,8 @@
   text-align: center;
   white-space: nowrap;
   width: fit-content;
+  overflow-y: auto;
+
 }
 
 .action-layout .text-wrapper {
@@ -84,7 +87,7 @@
   color: #bdbdbd;
 }
 
-.action-layout .your-email-wrapper {
+.action-layout .submitButton {
   background-color: $light-background-color;
   border: 1px solid;
   border-color: $primary-color;
@@ -93,18 +96,26 @@
   overflow: hidden;
   position: relative;
   width: 227px;
+  color: $primary-color;
+  text-align: center;
+  @include btn;
 }
 
-.action-layout .your-email-2 {
-  color: $text-color;
-  font-family: "Montserrat-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 52px;
-  letter-spacing: 0.2px;
-  line-height: 28px;
-  position: absolute;
-  top: 14px;
-  white-space: nowrap;
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
 }
-  
+
+.success-message {
+  @include h3;
+  //padding: 20px;
+  color: $primary-color;
+  //border: 1px solid;
+  //border-color: $primary-color;
+  //border-radius: 20px;
+  //background-color: $light-background-color;
+  //box-shadow: $light-drop-shadow;
+}
